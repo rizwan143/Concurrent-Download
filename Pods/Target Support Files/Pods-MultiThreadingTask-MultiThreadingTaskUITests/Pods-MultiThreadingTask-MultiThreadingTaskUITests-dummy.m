@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_MultiThreadingTask_MultiThreadingTaskUITests : NSObject
+@end
+@implementation PodsDummy_Pods_MultiThreadingTask_MultiThreadingTaskUITests
+@end
