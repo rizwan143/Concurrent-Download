@@ -10,7 +10,7 @@ import Alamofire
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var resultImgView: UIImageView!
+   
     //MARK: IBOutlet Properties
     @IBOutlet weak var firstImageProgressBar: UIProgressView!
     
@@ -31,11 +31,7 @@ class ViewController: UIViewController {
         asyncApiCallForDownloadImages()
     }
     
-    @IBAction func sendImagesToOtherDevice(_ sender: UIButton) {
-        print(imagesArr)
-        
-        
-    }
+  
     
     // Concurrent Thread along with download Images Asynchronously
     func asyncApiCallForDownloadImages() {
@@ -103,6 +99,8 @@ class ViewController: UIViewController {
                     self.imagesArr.append(downloadImage ?? UIImage())
                 }
              }
+        print(imagesArr)
     }
+    
 }
 
